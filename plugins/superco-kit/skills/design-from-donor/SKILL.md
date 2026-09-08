@@ -112,6 +112,11 @@ reported 0 defects while missing every photograph on the page.
 Screenshot the result and read it. The comparator scores type, colour and geometry. It can't
 score whether a page looks like anything.
 
+## Where this sits
+
+`design-system` is the gate that checks the result. This skill is the method that starts it.
+Run this first, that one before anyone sees the work.
+
 ## What this cannot do
 
 - **Exact font cuts.** A licensed face isn't on Google Fonts, and a substitute renders at a

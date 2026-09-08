@@ -245,7 +245,26 @@ Then reread every file you wrote against the rules at the top of this skill. Mea
 test runs, a setup built for someone who asked for no em dashes had none, and one built for
 someone who didn't think to ask had 25 across 6 files.
 
-## Phase 8: hand over
+## Phase 8: tell them what else they now have
+
+They installed 8 skills and have used 1. Name the rest, one line each, tied to a moment when
+they would reach for it. Do not read out a catalogue, and skip any that has nothing to do with
+the job they described.
+
+| Skill | Say it like this |
+|---|---|
+| `grill-me` | When writing the brief is the part you dread, this asks you the questions instead |
+| `call-context` | A call transcript in, a brief out, with the pain points in their words |
+| `slop-text-removal` | The writing standard. It also runs automatically on anything you write |
+| `design-from-donor` | Anything that gets looked at. Give it a real page to descend from and it will not start without one |
+| `design-system` | The checks that run on a design before anyone sees it |
+| `skill-creator` | When you have a second thing worth automating, this writes the skill properly |
+| `build-loop` | For a big build where being wrong would stay invisible for weeks |
+
+Say plainly that `slop-text-removal` is enforced rather than optional: a hook blocks a write
+that adds an em dash or an Oxford comma, so they will meet it whether or not they read it.
+
+## Phase 9: hand over
 
 Tell them 3 things and stop.
 
