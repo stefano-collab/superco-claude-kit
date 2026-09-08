@@ -48,6 +48,10 @@ def shipped_changed_since_push() -> list[str]:
         names += git("diff", "--name-only", base, "HEAD", check=False).splitlines()
     names += git("diff", "--name-only", "HEAD", check=False).splitlines()      # unstaged
     names += git("diff", "--name-only", "--cached", check=False).splitlines()  # staged
+    # Untracked too. `git diff` cannot see a file git has never heard of, so a brand new skill
+    # or hook was invisible here and would have shipped with no version bump, which is the one
+    # failure this tool exists to prevent. Found 8 Sep 2026 when the hooks/ folder was added.
+    names += git("ls-files", "--others", "--exclude-standard", check=False).splitlines()
     if not base:                                    # never pushed: everything counts
         names += git("ls-files", check=False).splitlines()
     return sorted({n for n in names if n and n.replace("\\", "/").startswith(SHIPPED)})

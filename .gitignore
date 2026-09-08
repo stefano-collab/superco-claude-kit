@@ -1,2 +1,3 @@
 *.str-verdict.json
 __pycache__/
+.gate-log/
