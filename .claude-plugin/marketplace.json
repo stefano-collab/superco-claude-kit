@@ -1,0 +1,14 @@
+{
+  "name": "superco",
+  "description": "Skills and standards for the Superco team, from the 7 September AI session.",
+  "owner": {
+    "name": "Stef"
+  },
+  "plugins": [
+    {
+      "name": "superco-kit",
+      "source": "./plugins/superco-kit",
+      "description": "The skills and standards from the 7 September AI session: a guided setup, a writing standard, a design standard, and the tools for briefing, formatting and building."
+    }
+  ]
+}
