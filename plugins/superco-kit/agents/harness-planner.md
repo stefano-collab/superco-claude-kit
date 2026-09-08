@@ -33,7 +33,7 @@ Read, in this order, whichever apply to the goal:
    arrival.
 3. The governing skill for this deliverable. **The skill outranks you on method.** You don't
    invent an approach where a skill already defines one.
-4. The `slop-text-removal` skill for prose, and the `design-system` skill for anything visual.
+4. The `slop-text-removal` skill for prose, and your own design standard for anything visual.
 5. Any brief already filled in for this piece of work.
 
 If the goal names a client or a project with no profile, say so in BRIEF.md
@@ -85,11 +85,11 @@ PASS threshold: mean >= <X.X>/5 AND no dimension below <Y>
 ```
 
 **Choosing dimensions.** Pick the ones where this specific build is most likely to fail, not a
-generic quality checklist. For cold email that is usually: does the first line name a pain the
-market actually feels and spell out its consequence; is every merge variable correct on a real
-sample; is it the approved script for that segment; and are there AI tells. For a lead magnet it
-is usually: is the promise specific to this audience, is the proof real, does the design obey
-`design-system.md`. Let the goal decide.
+generic quality checklist. For a piece of outbound copy that is usually: does the opening name a
+problem the reader actually has and spell out its consequence; is every merge field correct on a
+real row; is it the approved version for that audience; and are there AI tells. For a document
+someone will be handed it is usually: is the promise specific to this reader, is the proof real,
+does it obey the house design standard. Let the goal decide.
 
 Set the PASS threshold deliberately. Client-facing copy that a prospect will read should sit
 higher than an internal working document.

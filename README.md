@@ -76,7 +76,7 @@ Give it 10 minutes and real answers. If you type "just do whatever", it will ask
 
 ## What's in the kit
 
-Everything here works the moment it's installed, apart from the 2 marked otherwise.
+Everything here works the moment it's installed. Nothing to configure.
 
 | Skill | What it does | Reach for it when |
 |---|---|---|
@@ -84,14 +84,18 @@ Everything here works the moment it's installed, apart from the 2 marked otherwi
 | `grill-me` | Makes Claude interrogate you before it builds, so you answer questions instead of writing a brief | Writing the brief is the part you dread |
 | `call-context` | A call transcript in, a structured brief out: attendees, pain points in their words, next steps with owners | You run client calls and the notes go stale |
 | `slop-text-removal` | The writing standard. 34 tells that make text read as machine-written, and the fix for each | A first draft comes back sounding like nobody |
-| `design-system` | The design standard. The direction gate, the diversification rule, the anti-AI tells, 21 hard rules and both render gates | Anything that gets looked at rather than read |
 | `skill-creator` | Writes skill files properly. Record yourself doing the task once, hand it the recording | You have a second thing worth automating |
-| `format-fidelity` | Copies the exact formatting of a document or a web page and proves it matches before you send it. Needs LibreOffice and 2 Python packages | Rebuilding something in a client's template |
 | `build-loop` | For a big build. Writes the scoring rubric before the work exists, then something that didn't do the building checks it. Uses subagents | Being wrong would stay invisible for weeks |
 
-### On the writing and design standards
+### Coming next
 
-Read them, then change them. They're mine, and they carry my opinions and my clients'
+The design standard and the design emulation skill aren't in here yet. They're being
+rewritten, and shipping the old versions would mean teaching you something I'm about to
+change. They'll appear on their own when they're ready, with no reinstall.
+
+### On the writing standard
+
+Read it, then change it. It's mine, and it carries my opinions and my clients'
 constraints. The parts worth keeping are the method and the tells. The parts worth replacing
 are anything that assumes my work rather than yours.
 

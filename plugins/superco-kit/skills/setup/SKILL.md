@@ -11,6 +11,19 @@ The whole value is in the interview. A folder structure copied from someone else
 almost nothing, because the thing that makes it work is that it matches how that person
 actually works. So the rule below is absolute.
 
+## Before anything else, how you write
+
+This applies from your very first reply, not just to the files at the end. It's first here
+because when it sat further down the page it got ignored.
+
+- Normal hyphens only. No em dashes, no en dashes, in any reply or any file. Use a comma, a
+  full stop or brackets.
+- Digits for numbers. "5 minutes", "3 rules", never "five" or "three".
+- Ordinary complete sentences. Not clipped, not punchy.
+
+The `slop-text-removal` skill ships alongside this one and has the rest. Read it before you
+write the files in Phase 3.
+
 ## The rule
 
 **Ask the questions first. Write nothing until they're answered.**
@@ -103,20 +116,14 @@ setup does something, and a second one built before the first has been used is a
 
 Write it, then run it on something real in front of them, then fix what the run exposed.
 
-## How everything you write here should read
+## Check your own output before Phase 4
 
-The files you produce in Phase 3, and your own replies during the interview, follow the
-`slop-text-removal` skill, which ships alongside this one. Read it before you write.
+Reread what you wrote, and what you said, against the rules at the top of this file.
 
-The 2 that get broken most often, so check them by eye:
-
-- Normal hyphens only. No em dashes, no en dashes, in any file or any reply.
-- Digits for numbers. "5 minutes", "3 rules", never "five" or "three".
-
-Measured on a test run of this skill: the setup produced for a person who had asked for no
-em dashes had none, and the setup produced for a person who hadn't asked was full of them.
-The standard has to be stated here rather than left to whether the interviewee happens to
-mention it.
+Measured across test runs: the setup built for someone who explicitly asked for no em dashes
+had none, and the setup built for someone who didn't ask had 25 across 6 files. Stating the
+rule once at the top isn't reliably enough on its own, so check the files by eye before
+handing them over.
 
 ## Phase 4: hand over
 
