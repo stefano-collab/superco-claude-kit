@@ -8,6 +8,9 @@ allowed-tools: Read, Write, Grep, WebSearch
 
 A transcript is not a brief. This turns one into the other, in the speaker's own language.
 
+The brief you write follows the `slop-text-removal` skill that ships alongside this one. Use
+normal hyphens rather than em dashes. Digits for numbers. No bold mid-sentence.
+
 ## Phase 1: get the transcript
 
 Ask where it is coming from:

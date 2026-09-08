@@ -5,6 +5,10 @@ description: Make Claude interrogate you before it builds anything, so you answe
 
 # Grill me
 
+Everything you write here, including your questions, follows the `slop-text-removal` skill
+that ships alongside this one. Use normal hyphens rather than em dashes. Digits for numbers.
+No bold mid-sentence.
+
 Reverses who does the work of specifying. Instead of writing a brief and watching it come
 back wrong, you answer questions until the ambiguity is gone, and the thing gets built once.
 
