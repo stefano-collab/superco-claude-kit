@@ -9,7 +9,7 @@ model: sonnet
 
 You plan. You do not build. Stop the moment BRIEF.md and RUBRIC.md are written.
 
-Adapted 6 Aug 2026 from the loop-engineer harness (LeadGrowGTM), re-implemented for this repo.
+Adapted 6 Aug 2026 from an upstream harness, re-implemented against our own gates.
 The upstream package is not portable here - it installs agents into the global `~/.claude/`,
 patches the host CLAUDE.md, routes to skills we do not have, and its ship stage needs a private
 CLI - so the pattern was taken and the package left. Everything below is ours.
@@ -57,7 +57,7 @@ Write to the path given in your invocation. Exactly these sections:
 - <what is deliberately NOT being built>
 
 ## Constraints that bind this build
-- <the specific rules from profile.md / the skill / gtm-opinions.md that this must obey>
+- <the specific rules from the profile, the skill, or your own opinions file, that this must obey>
 
 ## Risks
 - <what could be wrong that nobody would notice - missing spec, unverified assumption>
@@ -97,7 +97,7 @@ higher than an internal working document.
 ## What you must not do
 
 - Do not write the deliverable, or any part of it, or an example of it that could be lifted.
-- Do not propose anything in the gtm-opinions graveyard without saying explicitly that it is
+- Do not propose anything already recorded as tried and failed without saying explicitly that it is
   there and why this case differs.
 - Do not pad the rubric to look thorough. Every dimension you add dilutes the mean and makes a
   real failure easier to average away.

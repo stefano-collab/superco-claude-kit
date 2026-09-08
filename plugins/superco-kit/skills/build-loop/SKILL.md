@@ -11,11 +11,11 @@ model that made the work is too generous grading its own homework.** Self-evalua
 declares itself done, and exits early - so the checker must be a different agent, in a fresh
 context, that never saw the maker's reasoning.
 
-Adopted 6 Aug 2026 at Stef's instruction. The upstream package (`LeadGrowGTM/loop-engineer`) was
+Adopted 6 Aug 2026. The upstream package it came from was
 assessed on 3 Aug and rejected as non-portable - it installs agents into the global `~/.claude/`,
 patches the host `CLAUDE.md`, seeds root files, routes to skills we do not have, hard-fails on a
-dirty tree (ours always is), and its ship stage needs a private LeadGrow CLI. Stef's call was to
-take the harness anyway: *"apart from the leadgrow cli it sounds excellent"*. So this is the
+dirty tree (ours always is), and its ship stage needs a private vendor CLI. The call was to
+take the harness anyway, minus that CLI. So this is the
 pattern, re-implemented against our own gates, with the parts that cannot work here named below
 rather than quietly dropped.
 
@@ -32,10 +32,10 @@ work often wants both in sequence (build it here, tune it there); never both on 
 
 ## When to run it
 
-**The test is NOT "is it client-facing".** That was the original wording and Stef corrected it on
+**The test is NOT "is it client-facing".** That was the original wording, corrected on
 6 Aug: *"why does build-loop only affect client facing stuff, can it not be for internal stuff like
-building out an observability workflow at the same level of a saas which is a huge job?"* He is
-right, and the evidence was the same day's session - every failure that hurt him was INTERNAL: a
+building out an observability workflow at the same level of a saas which is a huge job?"* That is
+right, and the evidence was the same day's session - every failure that actually hurt was INTERNAL: a
 Sunday Report whose sources had been dead for weeks, a reflection job that had silently stopped
 reflecting, a monitor whose verdict could never clear. None had a client to catch them, which
 makes them worse candidates for going unchecked, not better.
@@ -74,13 +74,14 @@ It writes `BRIEF.md` and `RUBRIC.md` into the build's working folder. **Read the
 sanity-check it against the client's `profile.md` yourself.** A wrong rubric confidently gates a
 wrong build.
 
-**Every acceptance criterion Stef stated in his own words gets its own dimension, and if he said
+**Every acceptance criterion the requester stated in their own words gets its own dimension, and if they said
 it twice, make it a gate.** A rubric that scores only what the build side thought to measure will
-pass a build he rejects on sight. 8 Aug 2026, the run viewer: nine dimensions, PASS at 4.875/5
-with both gates at 5, and his standing requirement, "i wanted it to look exactly like freckle",
-was never a dimension. Dimension 5 scored conformance to `design-system.md`, which is the house
-standard and not the donor. He scrapped the whole UI the same afternoon. Before accepting the
-rubric, list his criteria from the brief and the chat, and check each one appears.
+pass a build the requester rejects on sight. 8 Aug 2026, one internal viewer: 9 dimensions, PASS
+at 4.875/5 with both gates at 5, and the standing requirement, "i wanted it to look exactly like
+<the donor>", was never a dimension. Dimension 5 scored conformance to the house design standard,
+which is not the same thing as the donor. The whole interface was scrapped that afternoon. Before
+accepting the rubric, list the stated criteria from the brief and the conversation, and check that
+each one appears.
 
 **Do not skip this step and write the rubric later.** That is the single failure the whole
 pattern exists to prevent - a post-hoc rubric scores what you already made.
@@ -88,7 +89,7 @@ pattern exists to prevent - a post-hoc rubric scores what you already made.
 ### 2. Build
 
 You build it, in this session, following the governing skill to the letter. Not a subagent:
-delegating the make loses Stef's oversight and the skill routing, and he is the approval gate
+delegating the make loses your oversight and the skill routing, and you are the approval gate
 that upstream's "shipper" agent cannot replace.
 
 Do not read `RUBRIC.md` again while building. Build to the skill and the brief.
@@ -104,7 +105,7 @@ list - and reports facts only. Skip this only when the artifact has no rendered 
 from its source, which is rare.
 **Every command you hand the prover runs for real.** It has Bash and executes what you wrote,
 verbatim. On the first run, 6 Aug 2026, a prover step omitted `--no-sync` and created a live Google
-Sheet in Stef's Drive that then had to be trashed. Put the dry-run / no-sync / offline flag on every
+Sheet in a real Drive that then had to be trashed. Put the dry-run / no-sync / offline flag on every
 command in the prover's instruction yourself - the prover will not add it for you.
 
 **Build the prover's evidence list from the RUBRIC's dimensions, not from what you remember
@@ -125,31 +126,32 @@ evidence, and one of PASS / ITERATE / PLATEAU.
 
 ### 5. Iterate or stop
 
-- **PASS** - go to Stef's approval gate.
+- **PASS** - go to the approval gate.
 - **ITERATE** - fix EVERY defect the checker named, not only the dimensions that scored low, then
   run 3 and 4 again. Append each round to `CYCLE_LOG.md`. One contact bake-off, 24 Aug 2026:
   round 2 scored 4.0 and docked three dimensions on named defects; round 3 fixed the failing gate
   alone and left the other three, and the mean fell to 3.3. A defect left in place does not stay
   in the dimension that found it, and the round is spent.
 - **PLATEAU** - the mean moved by less than +-0.1 between rounds. **Stop looping and take it to
-  Stef with the log.** A plateau means the remaining gap needs a decision, not another attempt,
+  whoever asked for it, with the log.** A plateau means the remaining gap needs a decision rather than another attempt,
   and grinding past it burns tokens to move a number rather than the work.
 
-Cap at **3 rounds** unless Stef says otherwise. If it has not passed by then, the brief or the
+Cap at **3 rounds** unless you decide otherwise. If it has not passed by then, the brief or the
 rubric is wrong, and that is a conversation.
 
-**Never ask Stef whether to run the remaining stages.** Once the loop starts, the prover, the
-fresh-eyes checker and each iterate round run automatically; the only gate is his ship approval
-at the end. Asking mid-loop stalls the build and hands him a decision he already made when he
-asked for build-loop. Stef, 19 August 2026, on being asked to authorise the fresh-eyes check.
+**Never ask whether to run the remaining stages.** Once the loop starts, the prover, the
+fresh-eyes checker and each iterate round run automatically; the only gate is the ship approval
+at the end. Asking mid-loop stalls the build and hands the requester a decision they already made
+when they asked for build-loop. From a review on 19 August 2026, on being asked to authorise the
+fresh-eyes check.
 
-### 6. Ship - which here means Stef
+### 6. Ship - which here means a person
 
-There is no shipper agent. Upstream's runs `/no-mistakes` and opens a PR through a CLI we do not
-have, and our own rules forbid an unattended `git push` anyway. **The ship gate is Stef's
-approval, unchanged**, and the loop's job is to arrive at it with the work already checked. Give
-him the artifact, the PASS verdict and the cycle log together - and where the build is a campaign,
-the pre-launch QA result alongside it, per `CLAUDE.md`.
+There is no shipper agent. The upstream one runs a command and opens a PR through a CLI we don't
+have, and an unattended `git push` is a bad idea regardless. **The ship gate is a person's
+approval, unchanged**, and the loop's job is to arrive at it with the work already checked. Hand
+over the artifact, the PASS verdict and the cycle log together, plus any pre-launch check your
+own rules require.
 
 ## What it produces
 
@@ -179,7 +181,7 @@ is worth anything.
 ## Deliberately not adopted
 
 - **`harness-maker`** - we keep the make in the main session for oversight and skill routing.
-- **`harness-shipper`** - needs `/no-mistakes` and a private CLI; Stef's approval is the gate.
+- **`harness-shipper`** - needs `/no-mistakes` and a private CLI; a person's approval is the gate.
 - **Provider-aware model resolution** (bun scripts, claudex/codex proxies) - irrelevant here.
 - **Global `~/.claude/agents/` install** - our agents live in the repo, versioned with it. This
   was the main reason the upstream installer was rejected.
@@ -197,7 +199,7 @@ an ETA:
 - **A phase is ~45-60 min of build plus ~15 min of harness.** Planner, prover and checker are
   ~90-210s each; what dominates is the round trips, not the agents.
 - **Budget TWO prover passes on any build the user is still correcting.** The first prover pass
-  here graded code that no longer existed - Stef corrected a core assumption mid-build - and the
+  here graded code that no longer existed, because the requester corrected a core assumption mid-build, and the
   whole cycle had to be re-run. That is not waste to be avoided, it is the normal shape of a
   build where the user is the only source of what the data MEANS.
 - **The checker earned its cost on the gate, not on the mean.** Both builds cleared the mean
