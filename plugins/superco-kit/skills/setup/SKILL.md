@@ -73,23 +73,62 @@ Small batches, reacting to what comes back. Cover these, without reading them ou
     rather than assuming.
 12. What are they measured on?
 
-## Phase 3: what you can reach
+## Phase 3: connect their tools
 
-Ask what you're allowed to pull from, and offer both routes plainly:
+Their own tools are where the useful context lives, so wire them up now. These are official
+plugins maintained by the vendors, so nobody has to hunt for an API key.
 
-> I can pull your own material in so this is useful immediately. If you have an API key for
-> the tools you use, I can read from them directly. If you haven't got one, point me at a
-> folder or paste a few examples and that works too.
+The marketplace that carries them isn't on a fresh machine, so add it first:
 
-Then, for whichever applies:
+```
+/plugin marketplace add anthropics/claude-plugins-official
+```
 
-- **A key exists.** Ask them to put it in `.env` themselves rather than pasting it into the
-  chat. Read it from there. Never print a key back, and never write one into any other file.
-- **No key.** Ask for a folder path or a few pasted examples. This is the normal case, so
-  treat it as normal rather than as a downgrade.
+Then install the ones that match their job:
 
-If a pull fails, say what failed and carry on with the other route. Never leave a half built
-repository behind, and never write a file that pretends a pull succeeded.
+| Job | Install |
+|---|---|
+| Delivery and project management | `atlassian`, `shopify-ai-toolkit`, `figma`, `slack` |
+| Marketing and content | `slack`, `figma` |
+
+```
+/plugin install atlassian@claude-plugins-official
+```
+
+Say what each one does before you install it, in a line each. Atlassian reads and writes Jira
+issues and Confluence pages. Slack searches messages and threads they already have access to.
+The Shopify toolkit brings live documentation search and GraphQL validation, which is the fix
+for a model that confidently gets Shopify wrong. Figma reads design files.
+
+Install the whole row for their job unless they named a tool they don't touch. Somebody who
+never opens Figma doesn't need it, so skip it and say out loud that you skipped it and why.
+Silently installing less than the table says is the thing to avoid, because then nobody knows
+what they have.
+
+Then tell them 2 true things, because both matter:
+
+- Installing a connector doesn't sign them in. The first time one gets used it asks them to
+  authorise it, and they see exactly what it wants.
+- Connectors only register after a restart, so they won't work in this session. Everything
+  else this skill builds does.
+
+## Phase 3b: what you can read right now
+
+Connectors start working next session, so this session uses whatever they can point you at.
+Ask for a folder path or a few pasted examples. That's the normal route, so treat it as
+normal.
+
+If something fails, say what failed and carry on. Never leave a half built repository behind,
+and never write a file that pretends a read succeeded.
+
+### The .env rule
+
+Write a key name into `.env` only when something in this kit or one of their installed
+connectors actually reads it. An empty `JIRA_API_TOKEN=` that nothing consumes is worse than
+no line at all, because they fill it in and nothing happens.
+
+Most of what this setup does needs no key. Where one is genuinely needed, ask them to paste it
+into `.env` themselves, add `.env` to `.gitignore`, and never print a key back into the chat.
 
 ## Phase 4: read it back
 
@@ -150,15 +189,17 @@ said, and where the wording is theirs, quote it.
 It gets read first in every session, so their rules apply without them repeating themselves.
 Keep it short, because a long one gets skimmed by everybody including the model.
 
-### 3. The .env file
+### 3. The .env file, only if it earns its place
 
-List the keys for the tools they named, as names with empty values, and add it to
-`.gitignore` in the same breath.
+Follow the .env rule in phase 3b. A key name goes in only when something actually reads it,
+and for most people that means this file is empty or close to it, because the connectors
+handle authentication themselves.
 
-If they have no keys and wouldn't know where to find one, say so plainly and move on. Write
-the file with the tool names and a comment saying where each key comes from, so it's ready
-when they want it. Most of what this setup does needs none, so don't let it feel like a
-prerequisite.
+Create it with `.gitignore` alongside either way, so there's somewhere obvious for a key to
+live later.
+
+If they have no keys and wouldn't know where to find one, say so plainly and move on. The
+connectors installed in phase 3 cover the tools they named, so a missing key blocks nothing.
 
 ## Phase 6: fill the knowledge base
 
