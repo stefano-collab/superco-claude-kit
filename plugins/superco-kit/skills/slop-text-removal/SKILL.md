@@ -301,7 +301,7 @@ These come from CLAUDE.md and are not negotiable.
   voice. A US client's emails to US prospects use US spelling and that owner's register.
 - **Day-month dates.** "18 May", never "May 18".
 - **No Oxford comma.** "carriers, prices and data", never "carriers, prices, and data". Added
-  27 August 2026 on Stef's instruction after it appeared through a whole build.
+  27 August 2026, after it ran through a whole build unnoticed.
 - **Digits for numbers** in body text, per tell 3. "6 positives", "2 emails", "10 files".
 - **No bold inside body text**, per tell 6. Bold is for headings and for a single defined term.
 - **A list of facts is a bulleted list.** 4 facts in one paragraph become 4 bullets.
@@ -335,7 +335,8 @@ Blind tests, same day, Stef judging: tells as system prompt 0 of 6 read human; t
 loop 0 of 6; his passages alone 0 of 6; register description plus his passages plus a hand read
 against the tells 5 of 5 approved (1 after his own rewrite). Corpus at 63 rows.
 
-Method and the row-by-row record: `knowledge-base/str-corpus/results/`.
+Keep the row-by-row record wherever the corpus lives, and only change the standard when
+the after beats the before.
 
 
 ## Annealed from script reviews
