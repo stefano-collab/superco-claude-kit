@@ -1,0 +1,178 @@
+{
+ "type": {
+  "faces": [
+   {
+    "family": "DM Sans",
+    "runs": 22
+   }
+  ],
+  "display": {
+   "size": 72,
+   "weight": "600",
+   "colour": "rgb(13, 42, 76)",
+   "ls": "-4.32px",
+   "example": "Send cold emails per day,"
+  },
+  "body_size": 14,
+  "scale": [
+   14,
+   72,
+   24,
+   16,
+   18,
+   15,
+   17,
+   13
+  ],
+  "tracking_by_size": {
+   "13": -0.26,
+   "14": -0.33,
+   "15": -0.45,
+   "16": -0.48,
+   "17": -0.51,
+   "18": -0.54,
+   "24": -0.72,
+   "48": -2.88,
+   "72": -4.32
+  },
+  "weights_used": [
+   "500",
+   "600"
+  ]
+ },
+ "colour": {
+  "body": {
+   "value": "rgb(13, 42, 76)",
+   "runs": 10
+  },
+  "accents": [
+   {
+    "value": "rgb(42, 141, 255)",
+    "runs": 3
+   },
+   {
+    "value": "rgba(13, 42, 76, 0.6)",
+    "runs": 3
+   },
+   {
+    "value": "rgb(43, 127, 255)",
+    "runs": 1
+   },
+   {
+    "value": "rgba(13, 42, 76, 0.55)",
+    "runs": 1
+   }
+  ],
+  "quiet": [],
+  "fills": [
+   {
+    "value": "rgb(42, 141, 255)",
+    "boxes": 2
+   },
+   {
+    "value": "rgb(248, 249, 250)",
+    "boxes": 2
+   },
+   {
+    "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.92)",
+    "boxes": 1
+   },
+   {
+    "value": "rgb(239, 246, 255)",
+    "boxes": 1
+   },
+   {
+    "value": "rgba(42, 141, 255, 0.22)",
+    "boxes": 1
+   }
+  ],
+  "page_bg": "rgba(0, 0, 0, 0)"
+ },
+ "components": {
+  "buttons": [
+   {
+    "fill": "rgb(42, 141, 255)",
+    "radius": "999px",
+    "shape": "pill",
+    "w": 131,
+    "h": 48,
+    "border": "",
+    "shadow": "",
+    "label": "Book a Demo"
+   },
+   {
+    "fill": "rgb(40, 141, 255)",
+    "radius": "999px",
+    "shape": "pill",
+    "w": 173,
+    "h": 56,
+    "border": "1px solid rgb(40, 141, 255)",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(40, 141, 255, 0.35)",
+    "label": "Book a Demo"
+   },
+   {
+    "fill": "rgb(248, 249, 250)",
+    "radius": "999px",
+    "shape": "pill",
+    "w": 174,
+    "h": 56,
+    "border": "1px solid rgba(13, 42, 76, 0.03)",
+    "shadow": "",
+    "label": "Explore Plans"
+   }
+  ],
+  "bands": [
+   {
+    "fill": "oklab(0.999994 0.0000455678 0.0000200868 / 0.92)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 109,
+    "border": "",
+    "shadow": "",
+    "label": "🎉 Iman Gadzhi Acquires Stake in €45 Mil"
+   },
+   {
+    "fill": "rgb(42, 141, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 39,
+    "border": "",
+    "shadow": "",
+    "label": "🎉 Iman Gadzhi Acquires Stake in €45 Mil"
+   }
+  ],
+  "cards": [
+   {
+    "fill": "rgb(248, 249, 250)",
+    "radius": "8px",
+    "shape": "rounded",
+    "w": 860,
+    "h": 492,
+    "border": "1px solid rgba(13, 42, 76, 0.03)",
+    "shadow": "",
+    "label": ""
+   },
+   {
+    "fill": "rgb(0, 0, 0)",
+    "radius": "6px",
+    "shape": "rounded",
+    "w": 842,
+    "h": 474,
+    "border": "",
+    "shadow": "",
+    "label": ""
+   }
+  ]
+ },
+ "evidence": {
+  "text_runs": 22,
+  "boxes": 11,
+  "media": 9,
+  "furniture_dropped": {
+   "text": 0,
+   "boxes": 0
+  }
+ }
+}

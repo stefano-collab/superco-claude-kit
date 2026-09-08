@@ -1,0 +1,209 @@
+{
+ "type": {
+  "faces": [
+   {
+    "family": "Respira Black",
+    "runs": 68
+   },
+   {
+    "family": "Swiss Posters SCSBT",
+    "runs": 64
+   },
+   {
+    "family": "Swiss Now",
+    "runs": 37
+   },
+   {
+    "family": "Swiss Now Bold",
+    "runs": 12
+   }
+  ],
+  "display": {
+   "size": 54,
+   "weight": "700",
+   "colour": "rgb(0, 0, 0)",
+   "ls": "1.08px",
+   "example": "MORE TO READ, LESS TO PAY"
+  },
+  "body_size": 16,
+  "scale": [
+   38,
+   16,
+   15,
+   14,
+   18,
+   36,
+   54
+  ],
+  "tracking_by_size": {
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0,
+   "18": 0.0,
+   "36": 0.0,
+   "38": 1.14,
+   "54": 1.08
+  },
+  "weights_used": [
+   "400",
+   "500",
+   "600",
+   "700",
+   "800",
+   "900"
+  ]
+ },
+ "colour": {
+  "body": {
+   "value": "rgb(255, 255, 255)",
+   "runs": 137
+  },
+  "accents": [],
+  "quiet": [
+   {
+    "value": "rgb(0, 0, 0)",
+    "runs": 46
+   },
+   {
+    "value": "rgb(102, 102, 102)",
+    "runs": 12
+   },
+   {
+    "value": "rgb(26, 26, 26)",
+    "runs": 4
+   }
+  ],
+  "fills": [
+   {
+    "value": "rgb(255, 255, 255)",
+    "boxes": 22
+   },
+   {
+    "value": "rgb(26, 26, 26)",
+    "boxes": 7
+   },
+   {
+    "value": "rgb(0, 0, 0)",
+    "boxes": 1
+   }
+  ],
+  "page_bg": "rgb(255, 255, 255)"
+ },
+ "components": {
+  "buttons": [
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 120,
+    "h": 56,
+    "border": "1px solid rgb(26, 26, 26)",
+    "shadow": "",
+    "label": "SHOP NOW"
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 228,
+    "h": 56,
+    "border": "1px solid rgb(26, 26, 26)",
+    "shadow": "",
+    "label": "FIND YOUR FOOTBALL GIFT"
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 120,
+    "h": 56,
+    "border": "1px solid rgb(26, 26, 26)",
+    "shadow": "",
+    "label": "SHOP NOW"
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 55,
+    "h": 28,
+    "border": "",
+    "shadow": "",
+    "label": "SALE"
+   }
+  ],
+  "bands": [
+   {
+    "fill": "rgb(26, 26, 26)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 68,
+    "border": "",
+    "shadow": "",
+    "label": "4.7 based on 21,116 reviews BUY 2+ BOOKS"
+   },
+   {
+    "fill": "rgb(26, 26, 26)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 29,
+    "border": "",
+    "shadow": "rgba(0, 0, 0, 0.1) 0px 0px 0px 0px",
+    "label": "4.7 based on 21,116 reviews"
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 186,
+    "border": "0px solid rgb(0, 0, 0)",
+    "shadow": "",
+    "label": "Original Old Newspapers Newspaper Date B"
+   }
+  ],
+  "cards": [
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 461,
+    "h": 280,
+    "border": "",
+    "shadow": "",
+    "label": "MORE TO READ, LESS TO PAY CHOOSE two or "
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 461,
+    "h": 252,
+    "border": "",
+    "shadow": "",
+    "label": "FOOTBALL BOOKS CELEBRATE football — from"
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 461,
+    "h": 300,
+    "border": "",
+    "shadow": "",
+    "label": "THE QUEEN OF COUNTRY FROM THE SMOKIES to"
+   }
+  ]
+ },
+ "evidence": {
+  "text_runs": 199,
+  "boxes": 48,
+  "media": 33,
+  "furniture_dropped": {
+   "text": 4,
+   "boxes": 1
+  }
+ }
+}

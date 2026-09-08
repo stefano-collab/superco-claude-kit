@@ -1,0 +1,165 @@
+{
+ "type": {
+  "faces": [
+   {
+    "family": "FT Kunst Grotesk",
+    "runs": 14
+   }
+  ],
+  "display": {
+   "size": 56,
+   "weight": "500",
+   "colour": "rgb(255, 255, 255)",
+   "ls": "-1.4px",
+   "example": "Everything we learned from powering 20% of the Internet—your"
+  },
+  "body_size": 16,
+  "scale": [
+   16,
+   14,
+   19,
+   56,
+   48
+  ],
+  "tracking_by_size": {
+   "14": 0.0,
+   "16": 0.0,
+   "19": -0.48,
+   "48": -1.2,
+   "56": -1.4
+  },
+  "weights_used": [
+   "300",
+   "400",
+   "500"
+  ]
+ },
+ "colour": {
+  "body": {
+   "value": "rgb(38, 38, 38)",
+   "runs": 7
+  },
+  "accents": [
+   {
+    "value": "rgb(181, 40, 49)",
+    "runs": 1
+   }
+  ],
+  "quiet": [
+   {
+    "value": "rgb(31, 31, 31)",
+    "runs": 1
+   },
+   {
+    "value": "oklab(0.268617 0.000012286 0.00000536442 / 0.7)",
+    "runs": 1
+   }
+  ],
+  "fills": [
+   {
+    "value": "rgb(255, 255, 255)",
+    "boxes": 8
+   },
+   {
+    "value": "rgb(255, 94, 31)",
+    "boxes": 2
+   },
+   {
+    "value": "oklab(0.686966 0.161786 0.130019 / 0.3)",
+    "boxes": 1
+   },
+   {
+    "value": "rgba(0, 0, 0, 0.5)",
+    "boxes": 1
+   }
+  ],
+  "page_bg": "rgb(255, 255, 255)"
+ },
+ "components": {
+  "buttons": [
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "999px",
+    "shape": "pill",
+    "w": 204,
+    "h": 46,
+    "border": "1px solid rgb(255, 255, 255)",
+    "shadow": "",
+    "label": "Start building for free"
+   }
+  ],
+  "bands": [
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1200,
+    "h": 6985,
+    "border": "",
+    "shadow": "",
+    "label": ""
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 852,
+    "border": "",
+    "shadow": "",
+    "label": "Connect 2026 · The Agentic Conference of"
+   },
+   {
+    "fill": "rgb(255, 94, 31)",
+    "radius": "16px",
+    "shape": "rounded",
+    "w": 1264,
+    "h": 760,
+    "border": "",
+    "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.2)",
+    "label": "Connect 2026 · The Agentic Conference of"
+   }
+  ],
+  "cards": [
+   {
+    "fill": "oklab(0.686966 0.161786 0.130019 / 0.3)",
+    "radius": "50%",
+    "shape": "",
+    "w": 1011,
+    "h": 1216,
+    "border": "",
+    "shadow": "",
+    "label": ""
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 399,
+    "h": 191,
+    "border": "",
+    "shadow": "",
+    "label": "Run everywhere Security, connectivity, a"
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 399,
+    "h": 191,
+    "border": "0px solid rgb(240, 240, 240)",
+    "shadow": "",
+    "label": "Run anywhere Our network is close to you"
+   }
+  ]
+ },
+ "evidence": {
+  "text_runs": 14,
+  "boxes": 16,
+  "media": 14,
+  "furniture_dropped": {
+   "text": 5,
+   "boxes": 4
+  }
+ }
+}

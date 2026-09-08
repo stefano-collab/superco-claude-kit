@@ -1,0 +1,226 @@
+{
+ "type": {
+  "faces": [
+   {
+    "family": "ABC Normal",
+    "runs": 23
+   },
+   {
+    "family": "ESRebondGrotesque",
+    "runs": 5
+   }
+  ],
+  "display": {
+   "size": 70,
+   "weight": "600",
+   "colour": "rgb(11, 33, 32)",
+   "ls": "-1.4px",
+   "example": "The phone system that handles the work your calls create"
+  },
+  "body_size": 14,
+  "scale": [
+   14,
+   15,
+   13,
+   19,
+   16,
+   10,
+   70,
+   18
+  ],
+  "tracking_by_size": {
+   "10": 0.6,
+   "13": -0.03,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0,
+   "18": 0.0,
+   "19": -0.3,
+   "70": -1.4
+  },
+  "weights_used": [
+   "300",
+   "400",
+   "500",
+   "600"
+  ]
+ },
+ "colour": {
+  "body": {
+   "value": "rgb(11, 33, 32)",
+   "runs": 12
+  },
+  "accents": [
+   {
+    "value": "rgba(11, 33, 32, 0.62)",
+    "runs": 3
+   },
+   {
+    "value": "rgba(11, 33, 32, 0.78)",
+    "runs": 2
+   },
+   {
+    "value": "rgba(11, 33, 32, 0.66)",
+    "runs": 2
+   },
+   {
+    "value": "rgba(11, 33, 32, 0.75)",
+    "runs": 1
+   }
+  ],
+  "quiet": [
+   {
+    "value": "lab(10.9377 -9.36391 -2.15305 / 0.5)",
+    "runs": 2
+   },
+   {
+    "value": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+    "runs": 1
+   },
+   {
+    "value": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+    "runs": 1
+   }
+  ],
+  "fills": [
+   {
+    "value": "rgb(11, 33, 32)",
+    "boxes": 4
+   },
+   {
+    "value": "rgb(255, 255, 255)",
+    "boxes": 3
+   },
+   {
+    "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.28)",
+    "boxes": 2
+   },
+   {
+    "value": "rgba(11, 33, 32, 0.07)",
+    "boxes": 2
+   },
+   {
+    "value": "rgb(11, 31, 29)",
+    "boxes": 1
+   }
+  ],
+  "page_bg": "rgba(0, 0, 0, 0)"
+ },
+ "components": {
+  "buttons": [
+   {
+    "fill": "rgba(11, 33, 32, 0.05)",
+    "radius": "999px",
+    "shape": "pill",
+    "w": 159,
+    "h": 40,
+    "border": "1px solid rgba(11, 33, 32, 0.14)",
+    "shadow": "",
+    "label": "+44 7418 370446"
+   },
+   {
+    "fill": "rgb(11, 33, 32)",
+    "radius": "999px",
+    "shape": "pill",
+    "w": 142,
+    "h": 40,
+    "border": "",
+    "shadow": "",
+    "label": "Request a demo"
+   },
+   {
+    "fill": "rgb(255, 224, 22)",
+    "radius": "1280px",
+    "shape": "pill",
+    "w": 170,
+    "h": 54,
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "shadow": "rgba(11, 33, 32, 0.07) 0px 0px 0px 1px inset",
+    "label": "Start for free"
+   },
+   {
+    "fill": "rgb(11, 33, 32)",
+    "radius": "999px",
+    "shape": "pill",
+    "w": 178,
+    "h": 54,
+    "border": "1px solid rgb(11, 33, 32)",
+    "shadow": "",
+    "label": "Book a demo"
+   }
+  ],
+  "bands": [
+   {
+    "fill": "rgb(11, 31, 29)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 40,
+    "border": "",
+    "shadow": "",
+    "label": "The best alternative to Aircall, RingCen"
+   },
+   {
+    "fill": "rgb(247, 250, 249)",
+    "radius": "12px",
+    "shape": "rounded",
+    "w": 1260,
+    "h": 737,
+    "border": "1px solid rgba(13, 38, 30, 0.14)",
+    "shadow": "rgba(13, 38, 30, 0.35) 0px 24px 60px -30px",
+    "label": ""
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 148,
+    "border": "",
+    "shadow": "",
+    "label": "Read story Read story Read story Read st"
+   }
+  ],
+  "cards": [
+   {
+    "fill": "oklab(0.999994 0.0000455678 0.0000200868 / 0.64)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 379,
+    "h": 167,
+    "border": "",
+    "shadow": "",
+    "label": "Inbound Get an AI receptionist to pick u"
+   },
+   {
+    "fill": "oklab(0.999994 0.0000455678 0.0000200868 / 0.28)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 379,
+    "h": 167,
+    "border": "0px none rgb(11, 33, 32)",
+    "shadow": "",
+    "label": "Outbound Get through the whole list in a"
+   },
+   {
+    "fill": "oklab(0.999994 0.0000455678 0.0000200868 / 0.28)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 379,
+    "h": 167,
+    "border": "0px none rgb(11, 33, 32)",
+    "shadow": "",
+    "label": "Agentic Learn what your calls say about "
+   }
+  ]
+ },
+ "evidence": {
+  "text_runs": 28,
+  "boxes": 27,
+  "media": 83,
+  "furniture_dropped": {
+   "text": 1,
+   "boxes": 0
+  }
+ }
+}

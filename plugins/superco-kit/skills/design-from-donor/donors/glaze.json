@@ -1,0 +1,181 @@
+{
+ "type": {
+  "faces": [
+   {
+    "family": "Cera Pro",
+    "runs": 181
+   },
+   {
+    "family": "Fields",
+    "runs": 2
+   }
+  ],
+  "display": {
+   "size": 60,
+   "weight": "500",
+   "colour": "rgb(70, 35, 30)",
+   "ls": "-1px",
+   "example": "Supergloss"
+  },
+  "body_size": 14,
+  "scale": [
+   14,
+   16,
+   11,
+   8,
+   60,
+   9
+  ],
+  "tracking_by_size": {
+   "8": 0.63,
+   "9": 0.5,
+   "11": 0.0,
+   "14": 0.47,
+   "16": 0.78,
+   "60": -1.0
+  },
+  "weights_used": [
+   "400",
+   "500",
+   "700"
+  ]
+ },
+ "colour": {
+  "body": {
+   "value": "rgb(70, 35, 30)",
+   "runs": 182
+  },
+  "accents": [],
+  "quiet": [],
+  "fills": [
+   {
+    "value": "rgb(255, 255, 255)",
+    "boxes": 21
+   },
+   {
+    "value": "rgb(253, 243, 241)",
+    "boxes": 20
+   },
+   {
+    "value": "rgb(252, 230, 228)",
+    "boxes": 2
+   },
+   {
+    "value": "rgb(252, 217, 214)",
+    "boxes": 2
+   },
+   {
+    "value": "rgba(70, 35, 30, 0.5)",
+    "boxes": 1
+   }
+  ],
+  "page_bg": "rgb(255, 255, 255)"
+ },
+ "components": {
+  "buttons": [
+   {
+    "fill": "rgb(252, 217, 214)",
+    "radius": "33px",
+    "shape": "pill",
+    "w": 140,
+    "h": 47,
+    "border": "",
+    "shadow": "",
+    "label": "SHOP NOW"
+   },
+   {
+    "fill": "rgb(252, 217, 214)",
+    "radius": "33px",
+    "shape": "pill",
+    "w": 146,
+    "h": 47,
+    "border": "",
+    "shadow": "",
+    "label": "SHADE QUIZ"
+   },
+   {
+    "fill": "rgb(252, 230, 228)",
+    "radius": "2px",
+    "shape": "square",
+    "w": 55,
+    "h": 24,
+    "border": "",
+    "shadow": "",
+    "label": "I'M NEW"
+   }
+  ],
+  "bands": [
+   {
+    "fill": "rgb(252, 230, 228)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 134,
+    "border": "",
+    "shadow": "",
+    "label": "We wanted to let you know that we use co"
+   },
+   {
+    "fill": "rgba(70, 35, 30, 0.5)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 900,
+    "border": "",
+    "shadow": "",
+    "label": ""
+   },
+   {
+    "fill": "rgb(253, 243, 241)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 1280,
+    "h": 745,
+    "border": "",
+    "shadow": "",
+    "label": "Whether you’re looking to boost your col"
+   }
+  ],
+  "cards": [
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "0px",
+    "shape": "square",
+    "w": 640,
+    "h": 900,
+    "border": "0px solid rgba(70, 35, 30, 0.1)",
+    "shadow": "",
+    "label": ""
+   },
+   {
+    "fill": "rgb(253, 243, 241)",
+    "radius": "24px",
+    "shape": "rounded",
+    "w": 332,
+    "h": 560,
+    "border": "",
+    "shadow": "",
+    "label": ""
+   },
+   {
+    "fill": "rgb(255, 255, 255)",
+    "radius": "12px",
+    "shape": "rounded",
+    "w": 308,
+    "h": 144,
+    "border": "",
+    "shadow": "",
+    "label": "Supergloss Sheer Glow 190ML Regular pric"
+   }
+  ]
+ },
+ "evidence": {
+  "text_runs": 183,
+  "boxes": 97,
+  "media": 177,
+  "furniture_dropped": {
+   "text": 5,
+   "boxes": 1
+  }
+ }
+}
