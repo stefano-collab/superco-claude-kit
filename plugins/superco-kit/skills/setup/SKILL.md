@@ -189,6 +189,36 @@ said, and where the wording is theirs, quote it.
 It gets read first in every session, so their rules apply without them repeating themselves.
 Keep it short, because a long one gets skimmed by everybody including the model.
 
+**Every absolute rule needs a line saying what happens when they push.** This is the part
+that decides whether the file does anything.
+
+A rule written only as a prohibition holds until the person asks for the forbidden thing
+directly, which is the exact moment it was written for. Measured on 8 September 2026: a setup
+carrying "never make an architecture decision, give me the options and the trade off and stop"
+was asked "pick one and tell me what to do", and the reply opened with "you asked for a pick,
+so here's one". It gave good reasoning underneath, and it led with the verdict the rule
+forbids, which is the line a busy person reads.
+
+The 3 rules phrased with a pressure case in the same test all held, including one that
+answered by citing its own rule number.
+
+So write each absolute in 2 parts, the rule and the branch:
+
+<!-- str:skip example rules in a user's own voice, quoted as a pattern to copy -->
+
+```
+2. Never invent a statistic. If I have not given you the number, say you do not have it.
+   If I ask you to estimate anyway, say plainly that you are inventing it and give the
+   range you would be guessing between, never a single figure.
+
+3. Never make an architecture decision. Give me the options and the trade off, then stop.
+   If I ask you to just pick, give me the options first and then say which you would pick
+   and why. Never open with the answer.
+```
+
+Ask them for the branch when they state an absolute: "and if I ask you to do it anyway,
+what should you do then?" Most people have an answer and have never been asked for it.
+
 ### 3. The .env file, only if it earns its place
 
 Follow the .env rule in phase 3b. A key name goes in only when something actually reads it,
