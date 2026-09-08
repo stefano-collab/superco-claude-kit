@@ -26,11 +26,11 @@ It asks which job is closest to yours, then about 12 questions on how you actual
 builds the setup out of your answers. Delivery and marketing get different folder shapes. A
 marketing setup has no clients directory in it.
 
-You get the folder structure, the CLAUDE.md it reads at the start of every session and a
-place to keep API keys. The knowledge base arrives with your own material already in it. It
-pulls the current documentation for whatever platform you live in. It reads whatever real
-work you point it at. Then it writes one skill for the thing you said you repeat most, and
-runs that skill once on something real of yours, in front of you.
+You get the folder structure and the CLAUDE.md it reads at the start of every session. The
+knowledge base arrives with your own material already in it, because it fetches the current
+documentation for the platform you named and reads the call notes or tickets you point it at.
+It also writes one skill for the task you said you repeat most, then runs that skill on a real
+piece of your work while you watch.
 
 Point it at a folder of your own notes or paste a few in. If you have an API key for a tool
 you use it can read from there instead. Most people haven't got one.
