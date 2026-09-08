@@ -26,7 +26,7 @@ write the files in Phase 3.
 
 ## The rule
 
-**Ask the questions first. Write nothing until they're answered.**
+Ask the questions first, and write nothing at all until they have been answered.
 
 Not one folder, not one file, not a draft to react to. If the person gives short answers,
 ask again. If they say "just do whatever", say that you need 5 minutes of answers or the
@@ -68,7 +68,7 @@ script to read out.
     is a rule. "Be professional" isn't.
 14. Where do they want to be asked before it continues, and where should it just run?
 
-**The honest one**
+**Where AI is the wrong tool**
 
 15. Is there anything on this list that doesn't actually need AI? Say so if you spot one.
     An answer of "that's a filter in your email client" is worth more than a skill that
@@ -84,10 +84,12 @@ built on the uncorrected version is wrong from the first day.
 
 ## Phase 3: build
 
-Only now. 4 things, in this order.
+Only now, and in this order.
 
-**1. The folder structure**, using their unit from question 5 and their real names from
-question 6. A structure with `client-a` and `client-b` in it has already failed.
+### 1. The folder structure
+
+Use their unit from question 5 and their real names from question 6. A structure with
+`client-a` and `client-b` in it is one they will not recognise as theirs.
 
 ```
 CLAUDE.md              read first, every session
@@ -99,16 +101,19 @@ knowledge/             what they believe about their craft, and their standards
 skills/                the jobs, written down once each
 ```
 
-Fewer folders than you think. Only create one they gave you a reason for.
+Create fewer folders than you think you need, and only ones they gave you a reason for.
 
-**2. CLAUDE.md**, written from their answers to questions 12, 13 and 14. Every line traces
+### 2. CLAUDE.md
+
+Write it from their answers to questions 12, 13 and 14. Every line traces
 to something they said. Quote them where the wording is theirs.
 
 It's the file read first in every session, so their rules apply without them repeating
 themselves. Keep it short. A long one gets skimmed by everybody, including the model.
 
-**3. `.env`**, listing the keys for the tools they named in question 9, as names with empty
-values. Add it to `.gitignore` in the same breath. Never put a real key in any other file,
+### 3. The .env file
+
+List the keys for the tools they named in question 9, as names with empty values. Add it to `.gitignore` in the same breath. Never put a real key in any other file,
 and never print one back into the chat.
 
 If they have no keys and wouldn't know where to find one, say so plainly and move on. Write
@@ -116,7 +121,9 @@ the file with the names of the tools they use and a comment saying where each ke
 so it's ready when they want it. Do not turn this into a homework assignment, and do not make
 having keys feel like a prerequisite. Most of what this setup does needs none.
 
-**4. One skill**, for their answer to question 4. Just the one. It's the proof that the
+### 4. One skill
+
+Build it for their answer to question 4, and build only that one. It is the proof that the
 setup does something, and a second one built before the first has been used is a guess.
 
 Write it, then run it on something real in front of them, then fix what the run exposed.
