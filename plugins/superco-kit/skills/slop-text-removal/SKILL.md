@@ -296,12 +296,12 @@ These come from CLAUDE.md and are not negotiable.
 
 - **Normal hyphens only.** No em dashes, no en dashes. Anywhere, ever.
 - **No emojis** in deliverables.
-- **British English** in internal docs and your own materials: fulfilment, optimise,
-  colour, prioritise. **Exception:** anything written on a client's behalf uses their market
-  voice. A US client's emails to US readers use US spelling and that owner's register.
+- **British English** in chat, internal docs and your own brand's own materials: fulfilment, optimise,
+  colour, prioritise. **Exception:** prospect-facing copy is written in the client's own market
+  voice. A US client's emails to US prospects use US spelling and that owner's register.
 - **Day-month dates.** "18 May", never "May 18".
 - **No Oxford comma.** "carriers, prices and data", never "carriers, prices, and data". Added
-  27 August 2026, after it ran through a whole build unnoticed.
+  27 August 2026 on Stef's instruction after it appeared through a whole build.
 - **Digits for numbers** in body text, per tell 3. "6 positives", "2 emails", "10 files".
 - **No bold inside body text**, per tell 6. Bold is for headings and for a single defined term.
 - **A list of facts is a bulleted list.** 4 facts in one paragraph become 4 bullets.
@@ -309,18 +309,17 @@ These come from CLAUDE.md and are not negotiable.
 
 ## How the judge reads a draft
 
-The judgement half runs in a fresh context that never saw the draft being written: one
-isolated `claude -p` process per passage, with no tools and no project instructions, and this
-file as the whole system prompt. The brief it gets is adversarial by design. Assume the passage
-is machine-written, list every tell with the exact phrase, then name the 3 sentences no person
-would type even if no numbered tell fits, then give one verdict. "Does it flow" is the question
-the author always answers yes to, so it's never asked.
+The judgement half of STR runs in a fresh context that never saw the draft being written
+(an eval script, one isolated `claude -p` process per passage with no tools and no
+CLAUDE.md, this file as the whole system prompt). The brief it gets is adversarial by design:
+assume the passage is machine-written, list every tell with the exact phrase, then name the 3
+sentences no person would type even if no numbered tell fits, then give one verdict. "Does it
+flow" is the question the author answers yes to, so it's never asked.
 
-The mechanical half is a regex module with one home, imported by every gate that uses it rather
-than copied into each. It catches only what a machine can catch with certainty.
-
-Measure the two halves separately: the regex on precision, because a false alarm gets a gate
-switched off, and the judge on recall, because a miss is a tell that reached a reader.
+The mechanical half is a regex module with one home, the one home for every regex,
+imported by every gate that uses it. It catches only what a machine can catch with certainty.
+The two halves are measured separately: the regex is judged on precision (a false alarm gets a
+gate switched off), the judge on recall (a miss is a tell that reached a reader).
 
 <!-- judge:stop -->
 
@@ -336,8 +335,7 @@ Blind tests, same day, Stef judging: tells as system prompt 0 of 6 read human; t
 loop 0 of 6; his passages alone 0 of 6; register description plus his passages plus a hand read
 against the tells 5 of 5 approved (1 after his own rewrite). Corpus at 63 rows.
 
-Keep the row-by-row record wherever the corpus lives, and only change the standard when the
-after beats the before.
+Method and the row-by-row record: `knowledge-base/str-corpus/results/`.
 
 
 ## Annealed from script reviews
@@ -370,9 +368,9 @@ careful pass already fixed.
 ### Write for the reader's English, not your own
 
 **When copy goes to a market that reads English as a second language, plain English is a hard
-constraint rather than a preference.** From a review on 27 August 2026, on a campaign where 36%
-of the list was in Brazil and Mexico and the copy had been settled as English-only: *"NEEDS TO BE
-SIMPLE ENGLISH THAT EVEN A NON NATIVE BRAZILIAN OR MEXICAN ENGLISH SPEAKER CAN UNDERSTAND"*.
+constraint rather than a preference.** Stef, 27 August 2026, on one set of scripts, where 36% of the
+list is Brazil and Mexico and the campaign had been settled as English-only: *"NEEDS TO BE SIMPLE
+ENGLISH THAT EVEN A NON NATIVE BRAZILIAN OR MEXICAN ENGLISH SPEAKER CAN UNDERSTAND"*.
 
 The failure was not vocabulary. Every long word in that draft was ordinary. It was CONSTRUCTION:
 "the answer usually sits in three or four people's sent items, so it has to be reassembled before
@@ -393,7 +391,7 @@ with no source is worse than a general one, because it invites a reply nobody ca
 
 ### A statistic must connect to what THIS reader personally gains or loses
 
-From a review on 28 August 2026, after 3 figures in a row were rejected:
+Stef, 28 August 2026, after rejecting 3 figures in a row on one set of emails:
 
 > *"The reason we use that quote for AU transport - 71% of buyers won't buy furniture again after
 > a bad experience - is because we're reaching out to a founder who has a vested interest in

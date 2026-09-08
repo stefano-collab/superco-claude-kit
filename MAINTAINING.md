@@ -39,6 +39,32 @@ through untouched.
 Their machines pick it up in the background. If someone wants it immediately they can run
 `/plugin marketplace update superco` and then `/plugin update superco-kit`, then restart.
 
+## Some skills here are generated, so don't edit them by hand
+
+`slop-text-removal` is derived from our own internal standard. The kit version has the client
+names, the internal paths and the parts that only make sense in-house taken out. It is a
+derived artefact. 2 copies of one standard drift the moment either is edited, and nobody
+notices until somebody follows the stale one.
+
+So edit the internal file, then regenerate:
+
+```bash
+python ../tools/derive_kit_skill.py str
+```
+
+A hand edit to the generated file gets overwritten the next time anyone regenerates, and the
+pre-push hook refuses a push where the 2 have diverged. The generated files carry no marker
+saying they are generated, so this lists them:
+
+```bash
+python ../tools/derive_kit_skill.py --list
+```
+
+The recipe stops with an error if the internal file gets restructured. A renamed heading
+fails the build, so half the standard cannot go missing without anyone noticing.
+
+The design skills will work the same way when they arrive.
+
 ## Before you push
 
 ```bash
@@ -54,8 +80,7 @@ The scrub gate is what keeps a private client name out of a public repo. It carr
 - a fake API key
 - an em dash
 
-Run the gate against that fixture and it should exit 1 and name all 4. If a run over the repo fails, fix the file it names, and don't publish
-past it.
+Run the gate against that fixture and it should exit 1 and name all 4. If a run over the repo fails, fix the file it names before pushing.
 
 ## What is deliberately not in here
 
