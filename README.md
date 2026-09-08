@@ -108,15 +108,19 @@ the numbers are in the file.
 
 ## Updates
 
-I push a change to this repo. Claude Code refreshes marketplaces in the background, and the
-update applies the next time you restart. You don't reinstall and I don't send anything
+I push a change here and it reaches you. You never reinstall, and I never send a new file
 round.
 
-To pull an update immediately rather than waiting:
+Claude Code checks in the background, so most of the time it just arrives. To pull one
+immediately, 2 commands:
 
 ```
 /plugin marketplace update superco
+/plugin update superco-kit
 ```
+
+The first refreshes the catalogue and the second installs the new version. Restart Claude
+Code afterwards, because the skills load at startup.
 
 If a skill starts behaving differently from how it's described here, that's why. Tell me and
 I'll fix it at the source, which fixes it for everybody.
