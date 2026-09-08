@@ -48,7 +48,7 @@ Restart Claude Code when it asks. That's it.
 
 To check it worked, type `/plugin list` and you should see `superco-kit`.
 
-**If the first command fails**, it's almost always one of 2 things. Either the Code tab
+If the first command fails, it's almost always one of 2 things. Either the Code tab
 hasn't been opened in this project folder yet, in which case open a folder first and try
 again, or your Claude account settings block outside plugins, in which case message me and
 I'll sort it with whoever administers the account.

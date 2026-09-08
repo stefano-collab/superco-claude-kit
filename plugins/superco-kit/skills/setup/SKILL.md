@@ -111,6 +111,11 @@ themselves. Keep it short. A long one gets skimmed by everybody, including the m
 values. Add it to `.gitignore` in the same breath. Never put a real key in any other file,
 and never print one back into the chat.
 
+If they have no keys and wouldn't know where to find one, say so plainly and move on. Write
+the file with the names of the tools they use and a comment saying where each key comes from,
+so it's ready when they want it. Do not turn this into a homework assignment, and do not make
+having keys feel like a prerequisite. Most of what this setup does needs none.
+
 **4. One skill**, for their answer to question 4. Just the one. It's the proof that the
 setup does something, and a second one built before the first has been used is a guess.
 
