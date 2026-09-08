@@ -41,29 +41,28 @@ Their machines pick it up in the background. If someone wants it immediately the
 
 ## Some skills here are generated, so don't edit them by hand
 
-`slop-text-removal` is derived from our own internal standard. The kit version has the client
-names, the internal paths and the parts that only make sense in-house taken out. It is a
-derived artefact. 2 copies of one standard drift the moment either is edited, and nobody
-notices until somebody follows the stale one.
+`slop-text-removal` is built from our internal standard by a script. The kit version has the
+client names, the internal paths and the in-house-only parts stripped out. Keeping 2 copies by
+hand means one of them goes stale and people follow it.
 
-So edit the internal file, then regenerate:
+Edit the internal file, then regenerate:
 
 ```bash
 python ../tools/derive_kit_skill.py str
 ```
 
-A hand edit to the generated file gets overwritten the next time anyone regenerates, and the
-pre-push hook refuses a push where the 2 have diverged. The generated files carry no marker
-saying they are generated, so this lists them:
+A hand edit to the generated file gets overwritten on the next regeneration. The pre-push hook
+refuses a push where the source and the generated file disagree. To see which files are
+generated:
 
 ```bash
 python ../tools/derive_kit_skill.py --list
 ```
 
-The recipe stops with an error if the internal file gets restructured. A renamed heading
-fails the build, so half the standard cannot go missing without anyone noticing.
+If the internal file gets restructured, the recipe errors out and names the heading it could
+not find. Update the recipe at that point.
 
-The design skills will work the same way when they arrive.
+The design skills will work this way too when they arrive.
 
 ## Before you push
 
@@ -90,8 +89,8 @@ is wired into one person's mailbox and spreadsheet, so nobody else can install i
 ## Adding a skill
 
 Drop a folder under `plugins/superco-kit/skills/<name>/` with a `SKILL.md` carrying `name` and
-`description` frontmatter. Then validate it, bump the version and push. It appears for
-everyone with no action on their side.
+`description` frontmatter. Then validate it, bump the version and push. It reaches
+everyone without them doing anything.
 
 Spend time on the description. Claude reads it to decide whether the skill is relevant to what
 someone just asked, and it's also the line the reader sees in their skill list.
